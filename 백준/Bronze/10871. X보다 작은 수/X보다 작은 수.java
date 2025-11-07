@@ -1,29 +1,26 @@
 //10871. X보다 작은 수
 import java.util.Scanner;
 
-public class Main {
+public class Main{
     public static void main(String[] args){
 
-        //정수 N, X 입력
+        //n,x 입력
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); // 정수 N(수열 개수)
+        int n = sc.nextInt();
         int x = sc.nextInt();
 
-        //for문-a의 인덱스값 10개 받기
+        //크기가 n인 정수형 배열 a 생성
+        int a[] = new int[n];
+
+        //for문(n만큼 반복.배열 저장)
         for(int i = 0; i < n; i++){
-            int a[] = new int[10001]; //크기가 10인 정수형 배열 A 생성
-            a[i] = sc.nextInt(); //인덱스값 입력
+            a[i] = sc.nextInt();
 
-            if(x <= 1 && a[i] > x){
-                break;
-            }
-
-            //if 조건문-x보다 작은 값 출력
+            //if문(x보다 작으면 출력.띄어쓰기)
             if(a[i] < x){
                 System.out.print(a[i] + " ");
             }
         }
 
-        sc.close();
     }
 }
