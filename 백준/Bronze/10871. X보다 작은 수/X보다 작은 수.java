@@ -1,7 +1,8 @@
 //10871. X보다 작은 수
+package bronze5;
 import java.util.Scanner;
 
-public class Main{
+public class Num10871{
     public static void main(String[] args){
 
         //n,x 입력
